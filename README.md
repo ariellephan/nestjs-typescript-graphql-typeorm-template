@@ -11,7 +11,7 @@ yarn migration:run
 ## Revert
 yarn migration:revert
 
-## Rush db update to upstream *** DO NOT RUN BEFORE CHECKING IN WITH LEAD DEV ***
+## Push db update to upstream *** DO NOT RUN BEFORE CHECKING IN WITH LEAD DEV ***
 yarn migration:push // TODO - env config for what env push is going to
 
 ## Installation
