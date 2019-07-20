@@ -1,7 +1,8 @@
 {
   "name": "nest-typescript-starter",
   "private": true,
-  "version": "1.0.0",
+  "author": "Arielle Nguyen",
+  "version": "0.1.0",
   "description": "Nest TypeScript starter repository",
   "license": "MIT",
   "scripts": {
