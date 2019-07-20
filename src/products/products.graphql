@@ -1,0 +1,41 @@
+scalar Date
+
+type Query {
+  getProducts: [Product]
+  product(id: ID!): Product
+}
+
+type Mutation {
+  createProduct(createProductInput: CreateProductInput): Product
+}
+
+type Subscription {
+  productCreated: Product
+}
+
+type Product {
+  id: String!
+  purchasePlatformId: String
+  purchaseId: String!
+  modelName: String!
+  modelPurchaseId: String!
+  grade: String!
+  product: String!
+  productStatus: Boolean
+  counterProduct: String
+  counterProductStatus: Boolean
+  imei: String!
+  isReceived: Boolean
+  createdAt: Date
+  updatedAt: Date
+}
+
+input CreateProductInput {
+  purchasePlatformId: String!
+  purchaseId: String!
+  modelName: String!
+  modelPurchaseId: String!
+  grade: String!
+  product: String!
+  imei: String!
+}
